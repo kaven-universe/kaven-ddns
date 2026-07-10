@@ -1,4 +1,4 @@
-# Kaven-DDNS
+# [Kaven-DDNS](https://github.com/kaven-universe/kaven-ddns)
 
 A lightweight Dynamic DNS client built with .NET that:
 
@@ -18,7 +18,7 @@ This project targets .NET 10.
 - Automatic DNS A-record update support for AliDNS
 - Local IP cache file to detect changes efficiently
 
-## Docker
+## [Docker](https://hub.docker.com/r/kavenzero/kaven-ddns)
 
 Run with mounted configuration and log directories, and expose syslog UDP port `514`:
 
@@ -34,9 +34,10 @@ docker run -d \
 
 Notes:
 
-- Place your config file at `./Configuration/Kaven-DDNS.kcf` on the host.
+- Place your config file at `$(pwd)/Configuration/Kaven-DDNS.kcf` on the host.
 - Container paths are fixed to `/App/Configuration` and `/App/Log`.
 - If another service already uses UDP `514` on your host, change the host-side port (for example: `-p 1514:514/udp`).
+- You can use [kavenzero/syslog](https://hub.docker.com/r/kavenzero/syslog) to forward syslog traffic to the DDNS container.
 
 ## Configuration
 
