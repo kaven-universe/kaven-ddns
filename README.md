@@ -13,6 +13,7 @@ This project targets .NET 10.
 
 - Periodic WAN IP checks with configurable interval
 - Multiple fallback IP lookup endpoints
+- Optional custom DNS server for resolving public IP endpoint hostnames
 - Optional router syslog parsing with regex capture
 - Local SMTP notification on IP change/inactive status
 - Automatic DNS A-record update support for AliDNS
@@ -60,6 +61,7 @@ Main config file example (Kaven-DDNS.kcf):
         "https://api.ipify.org"
     ],
     "HttpRequestTimeout": "00:00:10",
+    "DNSServer": "1.1.1.1",
     "EnableLocalNotification": true,
     "LocalMailSetting": {
         "Enable": true,
@@ -105,6 +107,7 @@ Main config file example (Kaven-DDNS.kcf):
 
 - PeriodicCheckInterval: check cycle duration
 - EndpointUrls: public IP API fallback list
+- DNSServer: optional DNS server IP address used to resolve endpoint hostnames; omit it or leave it empty to use the system DNS resolver
 - EnableRouterSyslogCheck: enable UDP syslog listener
 - RouterSyslogRegexes: regex list; must capture IPv4 using named group ip
 - EnableLocalNotification: toggle local email alerts
