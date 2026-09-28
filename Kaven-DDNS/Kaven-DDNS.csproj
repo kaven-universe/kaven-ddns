@@ -15,13 +15,15 @@
     <Description>Dynamic DNS client for monitoring public IP changes, sending notifications, and auto-updating AliDNS records.</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Kaven.Standard" Version="2.7.4" />
-    <PackageReference Include="AlibabaCloud.SDK.Alidns20150109" Version="4.4.1" />
-    <PackageReference Include="MailKit" Version="4.17.0" />
+    <PackageReference Include="DnsClient" Version="1.8.0" />
+    <PackageReference Include="Kaven.Standard" Version="2.7.6" />
+    <PackageReference Include="AlibabaCloud.SDK.Alidns20150109" Version="4.6.0" />
+    <PackageReference Include="MailKit" Version="4.18.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.4\Independent\IoC.DDNS.cs" Link="IoC\IoC.DDNS.cs" />
-    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.4\Independent\IoC.Mail.cs" Link="IoC\IoC.Mail.cs" />
+    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.6\Independent\IoC.DDNS.cs" Link="IoC\IoC.DDNS.cs" />
+    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.6\Independent\IoC.Mail.cs" Link="IoC\IoC.Mail.cs" />
+	<Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.6\Independent\IoC.GetHostAddresses.cs" Link="IoC\IoC.GetHostAddresses.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IoC\" />
