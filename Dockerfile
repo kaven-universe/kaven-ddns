@@ -15,7 +15,7 @@ COPY --from=build-env /App/out .
 LABEL name="Kaven-DDNS" \
     author="Kaven" \
     email="kaven@wuwenkai.com" \
-    version="1.0.1" \
+    version="1.0.2" \
     description="Dynamic DNS client for monitoring public IP changes, sending notifications, and auto-updating AliDNS records."
 
 EXPOSE 514/udp
