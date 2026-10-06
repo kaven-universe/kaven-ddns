@@ -4,11 +4,11 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <InformationalVersion>1.0.1</InformationalVersion>
-    <PackageVersion>1.0.1</PackageVersion>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <InformationalVersion>1.0.2</InformationalVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Product>Kaven-DDNS</Product>
     <Authors>Kaven</Authors>
     <Copyright>Copyright (c) 2026 Kaven &lt;kaven@wuwenkai.com&gt;</Copyright>
@@ -16,14 +16,14 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DnsClient" Version="1.8.0" />
-    <PackageReference Include="Kaven.Standard" Version="2.7.6" />
+    <PackageReference Include="Kaven.Standard" Version="2.7.7" />
     <PackageReference Include="AlibabaCloud.SDK.Alidns20150109" Version="4.6.0" />
     <PackageReference Include="MailKit" Version="4.18.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.6\Independent\IoC.DDNS.cs" Link="IoC\IoC.DDNS.cs" />
-    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.6\Independent\IoC.Mail.cs" Link="IoC\IoC.Mail.cs" />
-	<Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.6\Independent\IoC.GetHostAddresses.cs" Link="IoC\IoC.GetHostAddresses.cs" />
+    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.7\Independent\IoC.DDNS.cs" Link="IoC\IoC.DDNS.cs" />
+    <Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.7\Independent\IoC.Mail.cs" Link="IoC\IoC.Mail.cs" />
+	<Compile Include="$(NuGetPackageRoot)kaven.standard\2.7.7\Independent\IoC.GetHostAddresses.cs" Link="IoC\IoC.GetHostAddresses.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IoC\" />
